@@ -3,7 +3,7 @@ extern crate serde_derive;
 
 /// Describes the shape of an obstacle.
 #[derive(Debug, Clone, Serialize, Deserialize)]
-enum Shape {
+pub enum Shape {
     Circular {
         /// The radius of the circular shape
         radius: f64,
@@ -19,9 +19,9 @@ enum Shape {
 
 /// Describes an obstacle to be added to the pathfinding algorithm.
 #[derive(Debug, Clone, Serialize, Deserialize)]
-struct Obstacle {
+pub struct Obstacle {
     /// [x, y] position of the obstacle
-    location: [f64; 2],
+    pub location: [f64; 2],
     /// The shape specification of the obstacle
-    shape: Shape,
+    pub shape: Shape,
 }
