@@ -1,0 +1,6 @@
+[package]
+name = "a4-proto"
+version = "0.1.0"
+authors = ["Geordon Worley <vadixidav@gmail.com>"]
+
+[dependencies]
