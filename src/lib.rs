@@ -36,3 +36,9 @@ pub struct Boundary {
     pub length: f64,
     pub point: Point,
 }
+
+/// Describes the path of the rover.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct Path {
+    pub points: Vec<Point>,
+}
