@@ -28,3 +28,9 @@ pub struct Robot {
 pub struct Goal {
     pub point: Point,
 }
+
+/// Describes the boundary in which the pathfinding algorithm will search for a path.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct Boundary {
+    pub point: Point,
+}
