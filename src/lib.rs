@@ -6,6 +6,8 @@ extern crate serde_derive;
 pub struct Obstacle {
     pub width: f64,
     pub length: f64,
-    pub coordinateX: f64,
-    pub coordinateY: f64,
+    #[serde(rename = "coordinateX")]
+    pub coordinate_x: f64,
+    #[serde(rename = "coordinateY")]
+    pub coordinate_y: f64,
 }
