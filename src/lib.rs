@@ -22,3 +22,9 @@ pub struct Robot {
     pub point: Point,
     pub radius: f64,
 }
+
+/// Describes the goal which the robot will pathfind to.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct Goal {
+    pub point: Point,
+}
