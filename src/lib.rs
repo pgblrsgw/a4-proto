@@ -32,5 +32,7 @@ pub struct Goal {
 /// Describes the boundary in which the pathfinding algorithm will search for a path.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Boundary {
+    pub width: f64,
+    pub length: f64,
     pub point: Point,
 }
